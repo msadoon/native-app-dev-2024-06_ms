@@ -8,7 +8,7 @@ messages and comments where you think your code may be unclear.
 
 Wireframe
 ---------
-![wireframe](wireframe.png | width=355)
+![wireframe](wireframe.png)
 
 Tasks
 -----
