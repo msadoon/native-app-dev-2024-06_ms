@@ -6,13 +6,18 @@ position as a native app developer at silverorange. We are interested to see
 how you work as well, as what your final results are; include useful Git commit
 messages and comments where you think your code may be unclear.
 
+Wireframe
+---------
+![wireframe](wireframe.png | width=355)
+
 Tasks
 -----
 Using one of either the blank Android **or** blank iOS project
 in `/android` or `/ios`:
 
- 1. Display a screen similar to the provided mockup. The screen should contain
-    a video player at the top and a scrollable details section at the bottom.
+ 1. Display a screen similar to the provided wireframe. The screen should
+    contain a video player at the top and a scrollable details section at the
+    bottom.
  2. Fetch a list of videos from the provided API (see instructions below for
     running the API).
  3. Sort the received list of videos by date.
