@@ -68,7 +68,7 @@ that show your progress.
 
 Getting Started With the Server Backend (/server)
 -----------------------------------------------
-For this exercise a pre-built Express application is provided. The application
+For this exercise a pre-built server application is provided. The application
 runs by default on `localhost:4000` and has the following endpoints:
 
  - `http://localhost:4000/videos` - returns a JSON-encoded array of videos.
