@@ -8,7 +8,7 @@ messages and comments where you think your code may be unclear.
 
 Wireframe
 ---------
-![wireframe](wireframe.png)
+![wireframe](docs/wireframe.png)
 
 Tasks
 -----
@@ -81,17 +81,29 @@ runs by default on `localhost:4000` and has the following endpoints:
 ### Running the Server
 
 The provided API server is needed as a data source for your project. To run
-the server you will need NodeJS and Yarn. On macOS you can install the
-requirements using Homebrew with:
+the server you will need NodeJS and Yarn.
+
+![](docs/apple.svg) On macOS you can install the
+requirements using Homebrew ([installation instructions](https://brew.sh/))
+with:
 
 ```sh
 brew install node yarn
 ```
 
+![](docs/linux.svg) On Linux, use your distribution’s package manager to
+install Node JS and Yarn. Node 10 or greater is required.
+
+![](docs/windows.svg) On Windows, the best option is to use package installers
+from:
+
+ - https://nodejs.org/en/download/, and
+ - https://classic.yarnpkg.com/en/docs/install/#windows-stable
+
 With dependencies installed, you can run the server with:
 
 ```sh
-cd server/
+cd server
 yarn install
 yarn start
 ```
