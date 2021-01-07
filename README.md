@@ -50,7 +50,7 @@ Dependencies
 ------------
 For media playback, Markdown parsing and/or networking you may want to use
 external dependencies. For Android, please use Gradle dependencies. For iOS,
-please use CocoaPods.
+please use CocoaPods ([installation instructions](https://cocoapods.org/)).
 
 You may consider using these packages, but are not required to use them:
 
@@ -92,7 +92,10 @@ brew install node yarn
 ```
 
 ![](docs/linux.svg) On Linux, use your distribution’s package manager to
-install Node JS and Yarn. Node 10 or greater is required.
+install Node JS and Yarn. Node 10 or greater is required. You may need to add repositories:
+
+ - https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+ - https://classic.yarnpkg.com/en/docs/install/#debian-stable
 
 ![](docs/windows.svg) On Windows, the best option is to use package installers
 from:
