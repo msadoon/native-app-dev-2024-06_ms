@@ -38,10 +38,12 @@ Environment
 -----------
 For this project, you can use any one of:
 
- - Android + Java
- - Android + Kotlin
- - iOS + SwiftUI
- - iOS + Objective-C
+ - Android
+   - Kotlin or Java
+   - XML layouts or Jetpack Compose
+ - iOS
+   - Swift or Objective-C
+   - SwiftUI or Storyboards
 
 There are blank projects created in the `android/` and `ios/` folders. Please
 start with one of the blank projects using Android Studio or Xcode.
