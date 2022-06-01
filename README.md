@@ -41,7 +41,7 @@ For this project, you can use any one of:
    - Swift or Objective-C
    - SwiftUI or Storyboards
 
-There are blank projects in the `android/` and `ios/` folders which should suit whichever combination of language, platform, and UI toolkit you perfer to work with. Please start with one of these blank projects using Android Studio or Xcode.
+There are blank projects in the `android/` and `ios/` folders which should suit whichever combination of language, platform, and UI toolkit you prefer to work with. Please start with one of these blank projects using Android Studio or Xcode.
 
 Dependencies
 ------------
