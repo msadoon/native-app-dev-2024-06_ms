@@ -38,7 +38,7 @@ For this project, you can use any one of:
    - Kotlin or Java
    - XML layouts or Jetpack Compose
  - iOS
-   - Swift or Objective-C
+   - Swift
    - SwiftUI or Storyboards
 
 There are blank projects in the `android/` and `ios/` folders which should suit whichever combination of language, platform, and UI toolkit you prefer to work with. Please start with one of these blank projects using Android Studio or Xcode.
