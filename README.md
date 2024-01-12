@@ -38,14 +38,13 @@ For this project, you can use any one of:
    - Kotlin or Java
    - XML layouts or Jetpack Compose
  - iOS
-   - Swift
-   - SwiftUI or Storyboards
+   - SwiftUI
 
 There are blank projects in the `android/` and `ios/` folders which should suit whichever combination of language, platform, and UI toolkit you prefer to work with. Please start with one of these blank projects using Android Studio or Xcode.
 
 Dependencies
 ------------
-For media playback, Markdown parsing and/or networking you may want to use external dependencies. For Android, please use Gradle dependencies. For iOS, please use CocoaPods ([installation instructions](https://cocoapods.org/)).
+For media playback, Markdown parsing and/or networking you may want to use external dependencies. For Android, please use Gradle dependencies. For iOS, please use CocoaPods ([installation instructions](https://cocoapods.org/)) or Swift packages.
 
 You may consider using these packages, but are not required to use them:
 
