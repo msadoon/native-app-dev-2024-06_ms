@@ -20,7 +20,6 @@ class VideosDataProvider: ObservableObject {
             switch result {
             case .success(let data):
                 self.videos = data
-                print("*** valid data \(self.videos)")
             case .failure(let error):
                 self.errorMessage = error.localizedDescription
             }
