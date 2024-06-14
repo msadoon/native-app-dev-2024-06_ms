@@ -3,16 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AF67A5C25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A5B25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift */; };
-		3AF67A5E25A64DBD00D360A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A5D25A64DBD00D360A7 /* ContentView.swift */; };
 		3AF67A6025A64DBF00D360A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF67A5F25A64DBF00D360A7 /* Assets.xcassets */; };
 		3AF67A6325A64DBF00D360A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF67A6225A64DBF00D360A7 /* Preview Assets.xcassets */; };
 		3AF67A6E25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A6D25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift */; };
 		3AF67A7925A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A7825A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift */; };
+		709C13A42C1BBC3B008A9BC2 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C139F2C1BBC3B008A9BC2 /* ResponseData.swift */; };
+		709C13A52C1BBC3B008A9BC2 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C13A02C1BBC3B008A9BC2 /* Video.swift */; };
+		709C13A62C1BBC3B008A9BC2 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C13A22C1BBC3B008A9BC2 /* Networking.swift */; };
+		709C13A92C1BBC82008A9BC2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 709C13A82C1BBC82008A9BC2 /* Alamofire */; };
+		709C13AC2C1BBCBB008A9BC2 /* VideosDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C13AA2C1BBCBB008A9BC2 /* VideosDataProvider.swift */; };
+		709C13AE2C1BBF1A008A9BC2 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C13AD2C1BBF1A008A9BC2 /* Author.swift */; };
+		709C13B22C1BBF7C008A9BC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C13AF2C1BBF7C008A9BC2 /* ContentView.swift */; };
+		709C13B52C1BC141008A9BC2 /* VideoPlayerSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C13B42C1BC141008A9BC2 /* VideoPlayerSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +40,6 @@
 
 /* Begin PBXFileReference section */
 		3AF67A5825A64DBD00D360A7 /* VideoPlayerSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayerSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AF67A5B25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerSwiftUIApp.swift; sourceTree = "<group>"; };
-		3AF67A5D25A64DBD00D360A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3AF67A5F25A64DBF00D360A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AF67A6225A64DBF00D360A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3AF67A6425A64DBF00D360A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +49,13 @@
 		3AF67A7425A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF67A7825A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerSwiftUIUITests.swift; sourceTree = "<group>"; };
 		3AF67A7A25A64DBF00D360A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		709C139F2C1BBC3B008A9BC2 /* ResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		709C13A02C1BBC3B008A9BC2 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		709C13A22C1BBC3B008A9BC2 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		709C13AA2C1BBCBB008A9BC2 /* VideosDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosDataProvider.swift; sourceTree = "<group>"; };
+		709C13AD2C1BBF1A008A9BC2 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		709C13AF2C1BBF7C008A9BC2 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		709C13B42C1BC141008A9BC2 /* VideoPlayerSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				709C13A92C1BBC82008A9BC2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +107,11 @@
 		3AF67A5A25A64DBD00D360A7 /* VideoPlayerSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				3AF67A5B25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift */,
-				3AF67A5D25A64DBD00D360A7 /* ContentView.swift */,
+				709C13B42C1BC141008A9BC2 /* VideoPlayerSwiftUI.swift */,
+				709C13B12C1BBF7C008A9BC2 /* Views */,
+				709C13AB2C1BBCBB008A9BC2 /* Data Providers */,
+				709C13A12C1BBC3B008A9BC2 /* Models */,
+				709C13A32C1BBC3B008A9BC2 /* Networking */,
 				3AF67A5F25A64DBF00D360A7 /* Assets.xcassets */,
 				3AF67A6425A64DBF00D360A7 /* Info.plist */,
 				3AF67A6125A64DBF00D360A7 /* Preview Content */,
@@ -130,6 +145,41 @@
 			path = VideoPlayerSwiftUIUITests;
 			sourceTree = "<group>";
 		};
+		709C13A12C1BBC3B008A9BC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				709C139F2C1BBC3B008A9BC2 /* ResponseData.swift */,
+				709C13A02C1BBC3B008A9BC2 /* Video.swift */,
+				709C13AD2C1BBF1A008A9BC2 /* Author.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		709C13A32C1BBC3B008A9BC2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				709C13A22C1BBC3B008A9BC2 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		709C13AB2C1BBCBB008A9BC2 /* Data Providers */ = {
+			isa = PBXGroup;
+			children = (
+				709C13AA2C1BBCBB008A9BC2 /* VideosDataProvider.swift */,
+			);
+			path = "Data Providers";
+			sourceTree = "<group>";
+		};
+		709C13B12C1BBF7C008A9BC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				709C13AF2C1BBF7C008A9BC2 /* ContentView.swift */,
+			);
+			name = Views;
+			path = ../../../../../OpenTweet/OpenTweet/Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +196,9 @@
 			dependencies = (
 			);
 			name = VideoPlayerSwiftUI;
+			packageProductDependencies = (
+				709C13A82C1BBC82008A9BC2 /* Alamofire */,
+			);
 			productName = VideoPlayerSwiftUI;
 			productReference = 3AF67A5825A64DBD00D360A7 /* VideoPlayerSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -192,8 +245,9 @@
 		3AF67A5025A64DBD00D360A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1210;
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					3AF67A5725A64DBD00D360A7 = {
 						CreatedOnToolsVersion = 12.1;
@@ -217,6 +271,9 @@
 				Base,
 			);
 			mainGroup = 3AF67A4F25A64DBD00D360A7;
+			packageReferences = (
+				709C13A72C1BBC82008A9BC2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3AF67A5925A64DBD00D360A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +316,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF67A5E25A64DBD00D360A7 /* ContentView.swift in Sources */,
-				3AF67A5C25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift in Sources */,
+				709C13B52C1BC141008A9BC2 /* VideoPlayerSwiftUI.swift in Sources */,
+				709C13A62C1BBC3B008A9BC2 /* Networking.swift in Sources */,
+				709C13B22C1BBF7C008A9BC2 /* ContentView.swift in Sources */,
+				709C13AC2C1BBCBB008A9BC2 /* VideosDataProvider.swift in Sources */,
+				709C13A42C1BBC3B008A9BC2 /* ResponseData.swift in Sources */,
+				709C13AE2C1BBF1A008A9BC2 /* Author.swift in Sources */,
+				709C13A52C1BBC3B008A9BC2 /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -333,6 +396,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -347,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -361,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -394,6 +459,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -402,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -419,9 +485,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VideoPlayerSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 224WGVVZC5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VideoPlayerSwiftUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,9 +507,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VideoPlayerSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 224WGVVZC5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VideoPlayerSwiftUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +529,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VideoPlayerSwiftUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +550,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VideoPlayerSwiftUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		709C13A72C1BBC82008A9BC2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		709C13A82C1BBC82008A9BC2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 709C13A72C1BBC82008A9BC2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AF67A5025A64DBD00D360A7 /* Project object */;
 }
