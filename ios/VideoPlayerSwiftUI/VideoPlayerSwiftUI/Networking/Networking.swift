@@ -15,7 +15,7 @@ class Networking {
         return jsonDecoder
     }
     /**
-     Use Alamofire to serialize the tweet timeline from a local file asynchronously.
+     Use Alamofire to serialize the videos timeline from a local source asynchronously.
      
      - Parameters:
          - fileName: The JSON formatted list of tweets.

@@ -11,14 +11,43 @@ private enum AppConstants {
 
 /// Top-level view from which all data is passed down view heirarchy.
 struct ContentView: View {
+    @State private var hoveringOverVideo = true
     @ObservedObject var dataProvider: VideosDataProvider
+    var videoController = AVPlayerControllerRepresented(player: AVPlayer(url: URL.init(string: "https://")!))
     
     var body: some View {
         NavigationStack {
             GeometryReader { proxy in
                 VStack(alignment: .leading) {
-                    if let availableVideo = dataProvider.videos.first {
-                        VideoPlayer(player: AVPlayer(url: availableVideo.hlsURL))
+                    if let availableVideo = dataProvider.currentVideo {
+                        videoController
+                            .onAppear {
+                                videoController.setItemToPlay(url: availableVideo.hlsURL)
+                            }
+                            .overlay {
+                                HStack {
+                                    Image("previous")
+                                        .onTapGesture {
+                                            dataProvider.previousItem()
+                                        }
+                                    if !videoController.isPlaying {
+                                        Image("play")
+                                            .onTapGesture {
+                                                videoController.play()
+                                            }
+                                    } else {
+                                        Image("pause")
+                                            .onTapGesture {
+                                                videoController.pause()
+                                            }
+                                    }
+                                    
+                                    Image("next")
+                                        .onTapGesture {
+                                            dataProvider.nextItem()
+                                        }
+                                }
+                            }
                         ScrollView {
                             VStack(alignment: .leading) {
                                 Text(availableVideo.title)
@@ -41,7 +70,7 @@ struct ContentView: View {
                 }
             }
             .task {
-                await dataProvider.updateTweets()
+                await dataProvider.retrieveVideos()
             }
             .onReceive(dataProvider.$errorMessage) { _ in
                 // TODO: alert user if there is a error in parsing JSON.
