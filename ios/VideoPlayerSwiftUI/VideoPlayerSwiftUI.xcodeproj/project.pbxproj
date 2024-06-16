@@ -12,7 +12,7 @@
 		3AF67A6E25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A6D25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift */; };
 		3AF67A7925A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A7825A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift */; };
 		70271E632C1F46CA00B1551E /* MarkdownKit in Frameworks */ = {isa = PBXBuildFile; productRef = 70271E622C1F46CA00B1551E /* MarkdownKit */; };
-		707B11572C1F4E8300D809CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B11562C1F4E8300D809CC /* ContentView.swift */; };
+		707B11592C1F4F6100D809CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B11582C1F4F6100D809CC /* ContentView.swift */; };
 		709C13A42C1BBC3B008A9BC2 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C139F2C1BBC3B008A9BC2 /* ResponseData.swift */; };
 		709C13A52C1BBC3B008A9BC2 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C13A02C1BBC3B008A9BC2 /* Video.swift */; };
 		709C13A62C1BBC3B008A9BC2 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C13A22C1BBC3B008A9BC2 /* Networking.swift */; };
@@ -50,7 +50,7 @@
 		3AF67A7425A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF67A7825A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerSwiftUIUITests.swift; sourceTree = "<group>"; };
 		3AF67A7A25A64DBF00D360A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		707B11562C1F4E8300D809CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		707B11582C1F4F6100D809CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		709C139F2C1BBC3B008A9BC2 /* ResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
 		709C13A02C1BBC3B008A9BC2 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		709C13A22C1BBC3B008A9BC2 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				709C13B42C1BC141008A9BC2 /* VideoPlayerSwiftUI.swift */,
-				709C13B12C1BBF7C008A9BC2 /* Views */,
+				707B115A2C1F4F9300D809CC /* Views */,
 				709C13AB2C1BBCBB008A9BC2 /* Data Providers */,
 				709C13A12C1BBC3B008A9BC2 /* Models */,
 				709C13A32C1BBC3B008A9BC2 /* Networking */,
@@ -147,6 +147,14 @@
 			path = VideoPlayerSwiftUIUITests;
 			sourceTree = "<group>";
 		};
+		707B115A2C1F4F9300D809CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				707B11582C1F4F6100D809CC /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		709C13A12C1BBC3B008A9BC2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,15 +179,6 @@
 				709C13AA2C1BBCBB008A9BC2 /* VideosDataProvider.swift */,
 			);
 			path = "Data Providers";
-			sourceTree = "<group>";
-		};
-		709C13B12C1BBF7C008A9BC2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				707B11562C1F4E8300D809CC /* ContentView.swift */,
-			);
-			name = Views;
-			path = ../../../../../OpenTweet/OpenTweet/Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,7 +321,7 @@
 			files = (
 				709C13B52C1BC141008A9BC2 /* VideoPlayerSwiftUI.swift in Sources */,
 				709C13A62C1BBC3B008A9BC2 /* Networking.swift in Sources */,
-				707B11572C1F4E8300D809CC /* ContentView.swift in Sources */,
+				707B11592C1F4F6100D809CC /* ContentView.swift in Sources */,
 				709C13AC2C1BBCBB008A9BC2 /* VideosDataProvider.swift in Sources */,
 				709C13A42C1BBC3B008A9BC2 /* ResponseData.swift in Sources */,
 				709C13AE2C1BBF1A008A9BC2 /* Author.swift in Sources */,
