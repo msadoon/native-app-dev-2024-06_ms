@@ -11,6 +11,7 @@
 		3AF67A6325A64DBF00D360A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF67A6225A64DBF00D360A7 /* Preview Assets.xcassets */; };
 		3AF67A6E25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A6D25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift */; };
 		3AF67A7925A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A7825A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift */; };
+		70271E632C1F46CA00B1551E /* MarkdownKit in Frameworks */ = {isa = PBXBuildFile; productRef = 70271E622C1F46CA00B1551E /* MarkdownKit */; };
 		709C13A42C1BBC3B008A9BC2 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C139F2C1BBC3B008A9BC2 /* ResponseData.swift */; };
 		709C13A52C1BBC3B008A9BC2 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C13A02C1BBC3B008A9BC2 /* Video.swift */; };
 		709C13A62C1BBC3B008A9BC2 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C13A22C1BBC3B008A9BC2 /* Networking.swift */; };
@@ -64,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				709C13A92C1BBC82008A9BC2 /* Alamofire in Frameworks */,
+				70271E632C1F46CA00B1551E /* MarkdownKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +200,7 @@
 			name = VideoPlayerSwiftUI;
 			packageProductDependencies = (
 				709C13A82C1BBC82008A9BC2 /* Alamofire */,
+				70271E622C1F46CA00B1551E /* MarkdownKit */,
 			);
 			productName = VideoPlayerSwiftUI;
 			productReference = 3AF67A5825A64DBD00D360A7 /* VideoPlayerSwiftUI.app */;
@@ -273,6 +276,7 @@
 			mainGroup = 3AF67A4F25A64DBD00D360A7;
 			packageReferences = (
 				709C13A72C1BBC82008A9BC2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				70271E612C1F46CA00B1551E /* XCRemoteSwiftPackageReference "MarkdownKit" */,
 			);
 			productRefGroup = 3AF67A5925A64DBD00D360A7 /* Products */;
 			projectDirPath = "";
@@ -644,6 +648,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		70271E612C1F46CA00B1551E /* XCRemoteSwiftPackageReference "MarkdownKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bmoliveira/MarkdownKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.1;
+			};
+		};
 		709C13A72C1BBC82008A9BC2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -655,6 +667,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		70271E622C1F46CA00B1551E /* MarkdownKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70271E612C1F46CA00B1551E /* XCRemoteSwiftPackageReference "MarkdownKit" */;
+			productName = MarkdownKit;
+		};
 		709C13A82C1BBC82008A9BC2 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 709C13A72C1BBC82008A9BC2 /* XCRemoteSwiftPackageReference "Alamofire" */;

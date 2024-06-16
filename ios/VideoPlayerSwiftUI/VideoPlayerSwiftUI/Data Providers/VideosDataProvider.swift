@@ -1,10 +1,12 @@
 import Foundation
 import SwiftUI
 import Alamofire
+import MarkdownKit
 
 /// Provide the views with tweets
 class VideosDataProvider: ObservableObject {
     let sharedNetworking = Networking()
+    private let parser = MarkdownParser()
     @Published var videos = [Video]()
     @Published var errorMessage: String?
     
@@ -24,5 +26,9 @@ class VideosDataProvider: ObservableObject {
                 self.errorMessage = error.localizedDescription
             }
         }
+    }
+    
+    func attributedStringForMarkdown(text: String) -> AttributedString {
+        AttributedString(parser.parse(text))
     }
 }
