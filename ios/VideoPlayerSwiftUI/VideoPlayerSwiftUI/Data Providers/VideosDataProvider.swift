@@ -22,6 +22,7 @@ class VideosDataProvider: ObservableObject {
             switch result {
             case .success(let data):
                 self.videos = data
+                self.videos.sort { $0.publishedAt < $1.publishedAt }
             case .failure(let error):
                 self.errorMessage = error.localizedDescription
             }
